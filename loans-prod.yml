@@ -1,0 +1,28 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/loans
+    password: MySql20
+  application:
+    name: loans
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  servlet:
+    context-path: /loan-service
+  port: 8091
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Loans Service Production Yml File "
+  contactDetails:
+    name: "Welcome Production Environment"
+    email: "john@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345

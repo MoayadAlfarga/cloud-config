@@ -1,0 +1,23 @@
+application:
+  name: accounts
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/accounts
+    password: MySql20
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to the Accounts Service. This is the QA Environment"
+  contactDetails:
+    name: "Smitha Ray - QA Lead"
+    email: "smitha@eazybank.com"
+  onCallSupport:
+    - (666) 265-3765
+    - (666) 734-8371

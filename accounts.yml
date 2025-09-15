@@ -1,0 +1,21 @@
+build:
+  version: "3.0"
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/accounts
+    password: MySql20
+  application:
+    name: accounts
+  jpa:
+    hibernate:
+      ddl-auto: update
+accounts:
+  message: "Welcome To account Service  API Local Profile  Default"
+  contactDetails:
+    name: "Moayad Faraj -  Java Developer"
+    email: "john@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
