@@ -6,9 +6,12 @@ spring:
     password: MySql20
   application:
     name: cards
+  liquibase:
+    enabled: 'true'
+    change-log: classpath:db.changelog/db.changelog-master.xml
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 server:
   servlet:
     context-path: /cards-service
@@ -17,7 +20,7 @@ server:
 
 build:
   version: "1.0"
-loans:
+cards:
   message: "Welcome to Loans Service Local  Yml File "
   contactDetails:
     name: "Welcome  Local  Environment"

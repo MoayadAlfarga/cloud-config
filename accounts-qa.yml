@@ -6,9 +6,12 @@ spring:
     username: root
     url: jdbc:mysql://localhost:3306/accounts
     password: MySql20
+  liquibase:
+    enabled: 'true'
+    change-log: classpath:db.changelog/db.changelog-master.xml
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 
 build:
   version: "2.0"
@@ -20,4 +23,4 @@ accounts:
     email: "smitha@eazybank.com"
   onCallSupport:
     - (666) 265-3765
-    - (666) 734-8371
+    - (666) 734-8371777

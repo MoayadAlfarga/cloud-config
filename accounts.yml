@@ -1,5 +1,8 @@
 build:
   version: "3.0"
+url:
+  loans:
+    service: http://localhost:8091/loan-service/loan
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -8,9 +11,12 @@ spring:
     password: MySql20
   application:
     name: accounts
+  liquibase:
+    enabled: 'true'
+    change-log: classpath:db.changelog/db.changelog-master.xml
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 accounts:
   message: "Welcome To account Service  API Local Profile  Default"
   contactDetails:
