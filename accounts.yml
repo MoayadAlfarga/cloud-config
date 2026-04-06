@@ -2,7 +2,7 @@ build:
   version: "3.0"
 url:
   loans:
-    service: http://localhost:8091/loan-service/loan
+    service: http://localhost:8091/loan-service/
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
