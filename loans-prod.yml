@@ -28,3 +28,17 @@ loans:
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1345
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+
+info:
+  app:
+    name: "loans"
+    description: "Eazy Bank loans Application"
+    version: "1.0.0"

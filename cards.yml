@@ -28,3 +28,18 @@ cards:
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1345
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+
+info:
+  app:
+    name: "cards"
+    description: "Eazy Bank Cards  Application"
+    version: "1.0.0"

@@ -27,3 +27,17 @@ cards:
   onCallSupport:
     - (310) 875-4367
     - (201) 236-1267
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+
+info:
+  app:
+    name: "cards"
+    description: "Eazy Bank Cards  Application"
+    version: "1.0.0"
