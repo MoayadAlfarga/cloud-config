@@ -24,3 +24,17 @@ accounts:
   onCallSupport:
     - (666) 265-3765
     - (666) 734-8371777
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+
+info:
+  app:
+    name: "loans"
+    description: "Eazy Bank loans Application"
+    version: "1.0.0"
