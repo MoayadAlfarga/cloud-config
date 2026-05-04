@@ -11,6 +11,6 @@ eureka:
 
 info:
   app:
-    name: "accounts"
-    description: "Eazy Bank Accounts Application"
+    name: "gateway"
+    description: "Eazy Bank gateway Application"
     version: "1.0.0"
