@@ -35,7 +35,7 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8012/
+      defaultZone: http://localhost:8012/eureka/
 
 info:
   app:
